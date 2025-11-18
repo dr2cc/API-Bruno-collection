@@ -1,0 +1,22 @@
+meta {
+  name: POST
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8082/url/
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: Shabby8574
+  password: 1234
+}
+
+body:json {
+  {
+    "url": "https://lechaim.ru/"
+  }
+}

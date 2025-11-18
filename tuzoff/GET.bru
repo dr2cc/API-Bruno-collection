@@ -1,0 +1,15 @@
+meta {
+  name: GET
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8082/t3qynu
+  body: none
+  auth: none
+}
+
+script:pre-request {
+  req.setMaxRedirects(0)
+}
